@@ -21,6 +21,9 @@ const Landing: React.FC = () => {
           <Button title="Large / rounded-md" styles="border px-4 py-3 text-lg bg-blue-500 text-white rounded-md" />
           <Button title="Large / rounded-full" styles="border px-4 py-3 text-lg bg-blue-500 text-white rounded-full" />
         </div>
+        <div className="flex gap-3 items-center">
+          <Button title="Rounded LG" styles="border px-4 py-3 text-lg bg-green-500 text-white rounded-lg" />
+        </div>
       </div>
       <div className="mt-6 flex gap-4">
         <Card />
