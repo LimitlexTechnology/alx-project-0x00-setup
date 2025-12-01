@@ -1,6 +1,3 @@
-import Image from "next/image"
-import HOUSE_IMAGE from "@/public/assets/house.png"
-import STAR_IMAGE from "@/public/assets/star.png"
 import React from "react"
 import Pill from "./Pill"
 
@@ -9,7 +6,7 @@ const Card: React.FC = () => {
 
  return (
     <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg ">
-      <Image className="rounded-lg" src={HOUSE_IMAGE} width={378.56} height={299.37} alt="house image" />
+      <div className="rounded-lg bg-[#F0F0F0]" style={{ width: 378.56, height: 299.37 }} />
       <div className="p-2 flex gap-2 mt-2">
         <Pill title="Top Villa" />
         <Pill title="Self CheckIn" />
@@ -21,7 +18,9 @@ const Card: React.FC = () => {
           <p className=" font-medium text=[17px] text-[#929292]">Sideman, Bali, Indonesia</p>
         </div>
         <div className="flex items-center">
-          <Image src={STAR_IMAGE} alt="star" />
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#131212" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.788 1.402 8.167L12 18.896l-7.336 3.27 1.402-8.167L.132 9.211l8.2-1.193L12 .587z" />
+          </svg>
           <p className=" font-medium text=[17px] ml-2">4.76</p>
         </div>
       </div>
@@ -36,8 +35,8 @@ const Card: React.FC = () => {
             <p className="ml-1 text-[12.95px] font-medium">4</p>
           </div>
           <div className="flex items-center">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_8_604)">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clipPath="url(#clip0_8_604)">
                 <path d="M1.10254 12.1843V13.5573C1.10254 15.1441 2.26869 16.4635 3.78896 16.7037V17.7188H4.78733V16.7429H13.1234V17.7188H14.1218V16.7037C15.6421 16.4635 16.8082 15.1441 16.8082 13.5573V12.1843H1.10254Z" fill="#131212" />
                 <path d="M2.10119 9.18778V3.42795C2.10119 2.46359 2.88578 1.67903 3.85014 1.67903C4.74325 1.67903 5.48162 2.35204 5.58595 3.21747C4.54635 3.45161 3.76728 4.38176 3.76728 5.49104V6.15673H8.42924V5.49104C8.42924 4.37377 7.63896 3.43807 6.58821 3.21231C6.47769 1.79797 5.29234 0.680664 3.85014 0.680664C2.33527 0.680664 1.10282 1.91308 1.10282 3.42795V9.18778H0.436768V11.1861H17.4746V9.18778H2.10119Z" fill="#131212" />
               </g>
